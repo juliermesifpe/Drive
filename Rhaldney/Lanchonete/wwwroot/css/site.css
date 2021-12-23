@@ -1,0 +1,164 @@
+/*@media (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    body {
+        display: grid;
+        grid-template:
+            "cabecalho" minmax(15vh, auto)
+            "conteudo" minmax(70vh, auto)
+            "rodape" minmax(15vh, auto);
+    }
+
+    .cabecalho {
+        background-color: red;
+    }
+
+    .conteudo {
+        background-color: royalblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1vh 0;
+        row-gap: 1vh;
+    }
+
+    .rodape {
+        background-color: rebeccapurple;
+    }
+
+    .consulta_formulario, .cadastro_formulario {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        width: 40vmax;
+        margin: 0 auto;
+        border: solid;
+        padding: 1vh 2vw;
+    }
+
+    .consulta_titulo, .cadastro_titulo {
+        text-align: center;
+    }
+
+    .consulta_campos, .cadastro_campos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1vh;
+    }
+
+        .consulta_campos div, .cadastro_campos div {
+            display: flex;
+            flex-direction: column;
+        }
+
+    .consulta_funcoes, .cadastro_funcoes {
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    body {
+        display: grid;
+        grid-template:
+            "cabecalho" minmax(15vh, auto)
+            "conteudo" minmax(70vh, auto)
+            "rodape" minmax(15vh, auto);
+        grid-template-rows minmax(15vh,auto, 70vh,auto, 15vh,auto);
+    }
+
+    .cabecalho {
+        background-color: red;
+    }
+
+    .conteudo {
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1vh 0;
+        row-gap: 1vh;
+    }
+
+    .rodape {
+        background-color: rebeccapurple;
+    }
+
+    .consulta_formulario, .cadastro_formulario {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        width: 50vmin;
+        margin: 0 auto;
+        border: solid;
+        padding: 1vh 2vw;
+    }
+
+    .consulta_titulo, .cadastro_titulo {
+        text-align: center;
+    }
+
+    .consulta_campos, .cadastro_campos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1vh;
+    }
+
+        .consulta_campos div, .cadastro_campos div {
+            display: flex;
+            flex-direction: column;
+        }
+
+    .consulta_funcoes, .cadastro_funcoes {
+        text-align: center;
+    }
+}*/
+@media (max-width: 768px) {
+    body {
+        display: grid;
+        grid-template:
+            "cabecalho" minmax(15vh,auto)
+            "conteudo" minmax(70vh,auto)
+            "rodape" minmax(15vh,auto);
+    }
+
+    .cabecalho {
+        background-color: red;
+    }
+
+    .conteudo {
+        background-color: rebeccapurple;
+    }
+
+    .rodape {
+        background-color: royalblue;
+    }
+    .consulta_titulo, .cadastro_titulo {
+        text-align: center;
+        margin-top: 2vh;
+    }
+    .consulta_formulario, .cadastro_formulario {
+        display: grid;
+        width: 55vmax;
+        margin: auto;
+        row-gap: 2vh;
+    }
+    .consulta_campos > div, .cadastro_campos > div {
+        display: grid;
+    }
+}.consulta_funcoes, .cadastro_funcoes{
+     text-align:center;
+ }

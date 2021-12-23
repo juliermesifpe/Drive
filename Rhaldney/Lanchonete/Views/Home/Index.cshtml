@@ -1,0 +1,83 @@
+﻿@{
+    //Layout = null;
+    ViewData["Title"] = "Cadastro";
+}
+<!--conteudo-->
+<main class="conteudo">
+ 
+   <!--sessao consulta-->
+    <section class="consulta">
+        
+        <!--sessao consulta formulario-->
+        <form action="" class="consulta_formulario">
+            
+            <!--sessao consulta titulo-->
+            <div class="consulta_titulo">
+                <h1>Consultar</h1>
+            </div>
+            
+            <!--sessao consulta campos-->
+            <div class="consulta_campos">
+                <div class="consulta_codigo">
+                    <label for="codigo">Código</label>
+                    <input type="text" name="" id="codigo">                   
+                </div>
+            </div>
+            
+            <!--sessao consulta funcoes-->
+            <div class="consulta_funcoes">
+                <button type="button" id="consultar" onclick="Consultar(this.id)">Consultar</button>
+                <button type="reset" id="limpar" onclick="Limpar()">Limpar</button>
+            </div>
+        </form>
+    </section>
+    
+    <!--sessao cadastro-->
+    <section class="cadastro">
+        
+        <!--sessao cadastro formulario-->
+        <form action="" class="cadastro_formulario">
+            
+            <!--sessao cadastro titulo-->
+            <div class="cadastro_titulo">
+                <h1>Cadastro</h1>
+            </div>
+            
+            <!--sessao cadastro campos-->
+            <div class="cadastro_campos">
+                <div class="cadastro_produto">
+                    <label for="produto">Produto</label>
+                    <input type="text" name="" id="produto">                   
+                </div>
+                
+                <div class="cadatro_preco"> 
+                    <label for="preco">Preço</label>
+                    <input type="number" name="" id="preco">
+                </div>
+
+                <div class="cadastro_quantidade"> 
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" name="" id="quantidade">
+                </div>
+                
+                <div class="cadastro_descricao">
+                    <label for="descricao">Descrição</label>
+                    <textarea type="text" name="" id="descricao" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="cadastro_imagem">
+                    <input type="file" name="" id="imagem" accept="image/*" capture>
+                </div>
+            </div>
+            
+            <!--sessao cadastro funcoes-->
+            <div class="cadastro_funcoes">
+                <button type="button" id="salvar" onclick="Salvar(this.id)">Salvar</button>
+                <button type="button" id="excluir" onclick="Excluir()">Excluir</button>
+                <button type="reset" id="limpar" onclick="Limpar()">Limpar</button>
+            </div>
+        </form>
+    </section>
+
+
+</main>
